@@ -1,0 +1,26 @@
+#!/bin/bash
+
+## MYSQL server configuration
+MYSQL_ROOT_PASSWORD=password
+MYSQL_DATABASE=pigcms
+MYSQL_USER=pigcms
+MYSQL_PASSWORD=password
+
+## configuration
+ONEX_URL=
+PIGCMS_URL=
+ONEX_SOURCE=
+PIGCMS_SOURCE=
+PIGCMS_MYSQL=${PIGCMS_MYSQL:-pigcms-mysql}
+PIGCMS_MYSQL_VOLUME=${PIGCMS_MYSQL_VOLUME:-pigcms-mysql-volume}
+MYSQL_IMAGE=${MYSQL_IMAGE:-mysql:5.6}
+ONEX_NAME=${ONEX_NAME:-ONex}
+ONEX_IMAGE=${ONEX_IMAGE:-XXXXXX}
+PIGCMS_NAME=${PIGCMS_NAME:-pigcms}
+PIGCMS_IMAGE=${PIGCMS_IMAGE:-XXXXXX}
+NGINX_NAME=${NGINX_NAME:-proxy}
+NGINX_IMAGE_NAME=${NGINX_IMAGE_NAME:-nginx}
+
+## The MAC address is generated using the IP address allocated to the container to avoid ARP collisions,
+## using a range from 02:42:ac:11:00:00 to 02:42:ac:11:ff:ff.
+#MAC_ADDRESS=02:42:ac:11:ff:ff
