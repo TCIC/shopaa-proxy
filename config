@@ -15,12 +15,8 @@ PIGCMS_MYSQL=${PIGCMS_MYSQL:-pigcms-mysql}
 PIGCMS_MYSQL_VOLUME=${PIGCMS_MYSQL_VOLUME:-pigcms-mysql-volume}
 MYSQL_IMAGE=${MYSQL_IMAGE:-mysql:5.6}
 ONEX_NAME=${ONEX_NAME:-ONex}
-ONEX_IMAGE=${ONEX_IMAGE:-tcic/onex}
+ONEX_IMAGE=${ONEX_IMAGE:-php:5.5-apache}
 PIGCMS_NAME=${PIGCMS_NAME:-pigcms}
 PIGCMS_IMAGE=${PIGCMS_IMAGE:-tcic/pigcms}
 NGINX_NAME=${NGINX_NAME:-proxy}
 NGINX_IMAGE_NAME=${NGINX_IMAGE_NAME:-nginx}
-
-## The MAC address is generated using the IP address allocated to the container to avoid ARP collisions,
-## using a range from 02:42:ac:11:00:00 to 02:42:ac:11:ff:ff.
-#MAC_ADDRESS=02:42:ac:11:ff:ff

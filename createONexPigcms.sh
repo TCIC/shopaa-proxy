@@ -21,9 +21,10 @@ docker run \
 -d ${MYSQL_IMAGE} \
 echo "mysql volume"
 
-# Start MARIADB
+# Start Mysql
 docker run \
 --name ${PIGCMS_MYSQL} \
+-P \
 -e MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD} \
 -e MYSQL_DATABASE=${MYSQL_DATABASE} \
 -e MYSQL_USER=${MYSQL_USER} \
